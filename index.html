@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Something Special ❤️</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+    <!-- Beautiful fonts -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================
+         FLOATING BACKGROUND HEARTS
+    ====================================== -->
+
+    <div class="background-hearts">
+
+        <span>♡</span>
+        <span>♡</span>
+        <span>♡</span>
+        <span>♡</span>
+        <span>♡</span>
+        <span>♡</span>
+        <span>♡</span>
+        <span>♡</span>
+        <span>♡</span>
+        <span>♡</span>
+
+    </div>
+
+
+
+    <!-- =====================================
+         PAGE 1 — BIRTHDAY INTRO
+    ====================================== -->
+
+    <section
+        class="screen active"
+        id="home"
+    >
+
+        <div class="main-card">
+
+            <div class="small-heart">
+                💕
+            </div>
+
+
+            <p class="small-title">
+                A little something special...
+            </p>
+
+
+            <!-- ✏️ PERSONALIZE THIS NAME -->
+
+            <h1>
+                Happy Birthday,
+                <span>HARSHINI</span> ❤️
+            </h1>
+
+
+            <!-- ✏️ PERSONALIZE THIS MESSAGE -->
+
+            <p class="intro-text">
+
+                Today is all about celebrating
+                someone who deserves all the
+                happiness in the world.
+
+            </p>
+
+
+            <button
+                class="main-btn"
+                onclick="goTo('message')"
+            >
+
+                Open Your Surprise 💌
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         PAGE 2 — BIRTHDAY MESSAGE
+    ====================================== -->
+
+    <section
+        class="screen"
+        id="message"
+    >
+
+        <div class="message-card">
+
+            <div class="big-heart">
+                ❤️
+            </div>
+
+
+            <p class="small-title">
+                MY LITTLE TRY TO MAKE YOUR DAY SPECIAL
+            </p>
+
+
+            <!-- ✏️ PERSONALIZE THIS -->
+
+            <h2>
+                You deserve a beautiful day ✨
+            </h2>
+
+
+            <!-- ✏️ PERSONALIZE THIS MESSAGE -->
+
+            <p>
+
+                May your birthday be filled with
+                happiness, beautiful memories,
+                unexpected smiles and everything
+                that makes your heart happy.
+
+            </p>
+
+
+            <!-- ✏️ PERSONALIZE THIS MESSAGE -->
+
+            <p>
+
+                Some people make ordinary moments
+                feel special just by being there.
+                This little website is just a small
+                way of saying that you are that special person 💗
+
+            </p>
+
+
+            <button
+                class="main-btn"
+                onclick="goTo('question1')"
+            >
+
+                There's something I want to ask... 💭
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         PAGE 3 — QUESTION 1
+    ====================================== -->
+
+    <section
+        class="screen"
+        id="question1"
+    >
+
+        <div class="question-card">
+
+            <div class="question-emoji">
+                🥺
+            </div>
+
+
+            <!-- ✏️ CHANGE QUESTION HERE -->
+
+            <h2>
+                Should I change? 💭
+            </h2>
+
+
+            <p>
+                don't get angry,summa fun
+            </p>
+
+
+            <div class="choice-area">
+
+                <!--
+                    YES MOVES AWAY
+                -->
+
+                <button
+                    id="changeYes"
+                    class="choice-btn yes-btn"
+                >
+
+                    YES 😳
+
+                </button>
+
+
+                <!--
+                    NO WORKS
+                -->
+
+                <button
+                    class="choice-btn no-btn"
+                    onclick="goTo('question2')"
+                >
+
+                    NO ❤️
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         PAGE 4 — QUESTION 2
+    ====================================== -->
+
+    <section
+        class="screen"
+        id="question2"
+    >
+
+        <div class="question-card">
+
+            <div class="question-emoji">
+                
+            </div>
+
+
+            <!-- ✏️ CHANGE QUESTION HERE -->
+
+            <h2>
+                Should I wait? ❤️
+            </h2>
+
+
+            <p>
+             veliya poirahta there is something special for you,please procced
+            </p>
+
+
+            <div class="choice-area">
+
+                <!--
+                    YES WORKS
+                -->
+
+                <button
+                    class="choice-btn yes-btn"
+                    onclick="goTo('last')"
+                >
+
+                    YES 💗
+
+                </button>
+
+
+                <!--
+                    NO MOVES AWAY
+                -->
+
+                <button
+                    id="waitNo"
+                    class="choice-btn no-btn"
+                >
+
+                    NO 🙈
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         PAGE 5 — ONE LAST SURPRISE
+    ====================================== -->
+
+    <section
+        class="screen"
+        id="last"
+    >
+
+        <div class="last-card">
+
+            <div class="last-heart">
+                💖
+            </div>
+
+
+            <p class="small-title">
+                You made it this far...
+            </p>
+
+
+            <h2>
+                One Last Surprise ✨
+            </h2>
+
+
+            <!-- ✏️ PERSONALIZE THIS -->
+
+            <p>
+
+                There's just one more thing
+                waiting for you.
+
+            </p>
+
+
+            <button
+                class="main-btn surprise-btn"
+                onclick="lastSurprise()"
+            >
+
+                One Last Thing ✨
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!--
+        JavaScript
+    -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
